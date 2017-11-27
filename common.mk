@@ -10,11 +10,6 @@ BOARD_USES_ADRENO := true
 
 BOARD_USES_QCNE := true
 
-# Qualcomm specific packages
-ifneq ($(TARGET_USES_AOSP_CAMERA),true)
-PRODUCT_PACKAGES += SnapdragonCamera
-endif
-
 TARGET_CRYPTFS_HW_PATH := device/qcom/common/cryptfs_hw
 
 # SECCOMP Extension
